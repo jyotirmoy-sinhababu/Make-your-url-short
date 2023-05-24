@@ -1,0 +1,29 @@
+.nav-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.nav-btn {
+  background-color: white;
+  border: none;
+}
+
+.nav-first-part {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-logIn-btn,
+.nav-signUp-btn {
+  background-color: white;
+  border: none;
+}
+
+.nav-signUp-btn {
+  width: 100px;
+  height: 45px;
+  background-color: hsl(192, 77%, 46%);
+}
