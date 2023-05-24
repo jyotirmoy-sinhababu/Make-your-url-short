@@ -23,10 +23,10 @@ const FormCnt = () => {
           <input
             className='input-field'
             onChange={(e) => {
-              handleChange();
+              handleChange(e);
             }}
             type='url'
-            placeholder='write your url'
+            placeholder='Shorten a link here...'
           />
           <button className='frm-btn' type='submit'>
             Shorten it!
