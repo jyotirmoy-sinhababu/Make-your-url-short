@@ -1,12 +1,27 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 import './formStyle.css';
 
 const FormCnt = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({ url: '' });
+
+  const handleSubmit = async () => {
+    try {
+      if (data) {
+        axios
+          .get(`https://api.shrtco.de/v2/shorten?url=${data.url}`)
+          .then((res) => {
+            console.log(res);
+          });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const handleChange = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
+    setData({ ...data, [data.url]: e.target.value });
   };
   console.log(data);
   return (
@@ -18,6 +33,7 @@ const FormCnt = () => {
           className='from'
           onClick={(e) => {
             e.preventDefault();
+            handleSubmit();
           }}
         >
           <input
