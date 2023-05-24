@@ -16,6 +16,12 @@
   gap: 18px;
 }
 
+.nav-first-btn-cnt {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .nav-logIn-btn,
 .nav-signUp-btn {
   background-color: white;

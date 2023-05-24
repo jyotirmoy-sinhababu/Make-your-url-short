@@ -1,0 +1,21 @@
+.introCard-cnt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 15%;
+  padding-top: 20px;
+}
+
+.introCard-txt-cnt {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 18px;
+}
+
+.introCard-btn {
+  width: 100px;
+  border: none;
+  background-color: hsl(192, 77%, 46%);
+  height: 50px;
+}
