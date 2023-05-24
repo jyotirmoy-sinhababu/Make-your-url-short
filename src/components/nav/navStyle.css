@@ -19,7 +19,7 @@
 .nav-first-btn-cnt {
   display: flex;
   gap: 10px;
-  align-items: center;
+  justify-content: center;
 }
 
 .nav-logIn-btn,
@@ -28,8 +28,14 @@
   border: none;
 }
 
+.nav-auth-cnt {
+  display: flex;
+  gap: 6px;
+}
+
 .nav-signUp-btn {
   width: 100px;
   height: 45px;
   background-color: hsl(192, 77%, 46%);
+  border-radius: 200px;
 }

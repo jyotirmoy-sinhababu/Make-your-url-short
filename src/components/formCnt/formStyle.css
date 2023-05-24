@@ -1,0 +1,39 @@
+.frm-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-frm-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 105px;
+  border-radius: 5px;
+  background-color: hsl(257, 27%, 26%);
+}
+
+.from {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-field {
+  width: 400px;
+  height: 39px;
+  padding-left: 25px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.frm-btn {
+  height: 39px;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: hsl(192, 77%, 46%);
+}

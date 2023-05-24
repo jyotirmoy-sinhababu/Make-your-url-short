@@ -9,7 +9,7 @@
 .introCard-txt-cnt {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 400px; 
   gap: 18px;
 }
 
