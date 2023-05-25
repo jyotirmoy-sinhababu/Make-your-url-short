@@ -1,5 +1,6 @@
 .frm-cnt {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 25px;
@@ -25,6 +26,7 @@
   width: 400px;
   height: 39px;
   padding-left: 25px;
+  padding-right: 12px;
   font-size: 1.2rem;
   border-radius: 5px;
   border: none;

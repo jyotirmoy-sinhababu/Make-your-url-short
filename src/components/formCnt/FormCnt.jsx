@@ -1,29 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import './formStyle.css';
 
 const FormCnt = () => {
-  const [data, setData] = useState({ url: '' });
-
-  const handleSubmit = async () => {
-    try {
-      if (data) {
-        axios
-          .get(`https://api.shrtco.de/v2/shorten?url=${data.url}`)
-          .then((res) => {
-            console.log(res);
-          });
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  const [inputData, setInputData] = useState('');
+  const [apiData, setApiData] = useState([]);
 
   const handleChange = (e) => {
-    setData({ ...data, [data.url]: e.target.value });
+    setInputData(e.target.value);
   };
-  console.log(data);
+
+  const handleSubmit = () => {
+    if (inputData.length) {
+      axios
+        .get(`https://api.shrtco.de/v2/shorten?url=${inputData}`)
+        .then((res) => {
+          const newData = { ...res.data.result, id: idGenerator() };
+          setApiData((prevData) => [...prevData, newData]);
+        });
+    }
+  };
+  const idGenerator = () => {
+    return Math.floor(Math.random() * 100000);
+  };
+
+  console.log(apiData);
   return (
     <div className='frm-cnt'>
       {' '}
@@ -31,7 +33,7 @@ const FormCnt = () => {
         {' '}
         <form
           className='from'
-          onClick={(e) => {
+          onSubmit={(e) => {
             e.preventDefault();
             handleSubmit();
           }}
@@ -48,7 +50,15 @@ const FormCnt = () => {
             Shorten it!
           </button>
         </form>
-        <div></div>
+      </div>
+      <div>
+        {apiData ? (
+          <div>
+            <p>{apiData.full_short_link}</p>
+            <p>{apiData.full_short_link2}</p>
+            <p>{apiData.full_short_link3}</p>
+          </div>
+        ) : null}
       </div>
     </div>
   );
