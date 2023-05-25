@@ -3,6 +3,8 @@ import axios from 'axios';
 
 import './formStyle.css';
 
+import DisplayLinks from '../displayLink/DisplayLinks';
+
 const FormCnt = () => {
   const [inputData, setInputData] = useState('');
   const [apiData, setApiData] = useState([]);
@@ -17,7 +19,7 @@ const FormCnt = () => {
         .get(`https://api.shrtco.de/v2/shorten?url=${inputData}`)
         .then((res) => {
           const newData = { ...res.data.result, id: idGenerator() };
-          setApiData((prevData) => [...prevData, newData]);
+          setApiData([...apiData, newData]);
         });
     }
   };
@@ -52,13 +54,15 @@ const FormCnt = () => {
         </form>
       </div>
       <div>
-        {apiData ? (
-          <div>
-            <p>{apiData.full_short_link}</p>
-            <p>{apiData.full_short_link2}</p>
-            <p>{apiData.full_short_link3}</p>
-          </div>
-        ) : null}
+        {apiData.length
+          ? apiData.map((item) => {
+              return (
+                <div key={item.id}>
+                  <DisplayLinks data={item} />
+                </div>
+              );
+            })
+          : null}
       </div>
     </div>
   );
