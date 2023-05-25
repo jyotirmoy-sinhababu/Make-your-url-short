@@ -53,7 +53,7 @@ const FormCnt = () => {
           </button>
         </form>
       </div>
-      <div>
+      <div className='form-dis-cnt'>
         {apiData.length
           ? apiData.map((item) => {
               return (

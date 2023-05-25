@@ -1,0 +1,21 @@
+.display-cnt {
+  display: flex;
+  width: 700px;
+  height: 40px;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.display-second-cnt {
+  display: flex;
+  width: 270px;
+  justify-content: space-between;
+}
+
+.display-btn {
+  width: 76px;
+  height: 30px;
+  border: none;
+  background-color: hsl(192, 77%, 46%);
+  border-radius: 4px;
+}
