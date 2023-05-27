@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@1,200&display=swap');
+
+.adv-cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.adv-header {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 900;
+}
+
+.adv-para {
+  font-family: 'Nunito Sans', sans-serif;
+  width: 350px;
+}
