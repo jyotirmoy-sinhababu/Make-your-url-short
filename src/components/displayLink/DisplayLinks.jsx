@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CopyBtn from '../btnComp/CopyBtn';
+
 import './displayStyle.css';
 
 const DisplayLinks = ({ data }) => {
@@ -11,7 +13,7 @@ const DisplayLinks = ({ data }) => {
       </div>
       <div className='display-second-cnt'>
         <p className='display-url'>{data.full_short_link}</p>
-        <button className='display-btn'>Copy</button>
+        <CopyBtn text={data.full_short_link} />
       </div>
     </div>
   );

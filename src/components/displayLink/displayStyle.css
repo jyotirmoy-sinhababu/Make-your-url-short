@@ -6,6 +6,10 @@
   padding-top: 20px;
 }
 
+.display-first-cnt {
+  width: 320px;
+}
+
 .display-second-cnt {
   display: flex;
   width: 270px;
