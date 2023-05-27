@@ -1,0 +1,7 @@
+.copy-btn {
+  width: 76px;
+  height: 30px;
+  border: none;
+  background-color: hsl(192, 77%, 46%);
+  border-radius: 4px;
+}

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import './copyStyle.css';
+
 const CopyBtn = ({ text }) => {
   const [isCopy, setIsCopy] = useState(false);
 
@@ -14,6 +16,7 @@ const CopyBtn = ({ text }) => {
   return (
     <div>
       <button
+        className='copy-btn'
         onClick={() => {
           copyFunction();
         }}

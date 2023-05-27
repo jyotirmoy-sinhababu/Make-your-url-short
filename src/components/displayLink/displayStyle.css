@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@1,200&family=Poppins:wght@100&display=swap');
+
 .display-cnt {
   display: flex;
   width: 700px;
@@ -16,10 +18,8 @@
   justify-content: space-between;
 }
 
-.display-btn {
-  width: 76px;
-  height: 30px;
-  border: none;
-  background-color: hsl(192, 77%, 46%);
-  border-radius: 4px;
+.display-url {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 1000;
+  font-size: 17px;
 }
