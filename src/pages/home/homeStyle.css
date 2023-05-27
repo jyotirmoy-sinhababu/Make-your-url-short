@@ -1,0 +1,12 @@
+.main-home-card-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.card-empt-cnt {
+  height: 5px;
+  width: 10px;
+  background-color: rgb(31, 143, 190);
+}

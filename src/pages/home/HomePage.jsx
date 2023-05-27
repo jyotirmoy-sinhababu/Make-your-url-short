@@ -18,8 +18,8 @@ const HomePage = () => {
       <IntroCard />
       <FormCnt />
       <AdvanceStatistic />
-      <div>
-        <div>
+      <div className='main-home-card-cnt'>
+        <div className='card-cnt'>
           <Card
             img={brand}
             header={'Brand Recognition'}
@@ -28,8 +28,8 @@ const HomePage = () => {
             }
           />
         </div>
-        <div></div>
-        <div>
+        <div className='card-empt-cnt'></div>
+        <div className='card-cnt'>
           <Card
             img={detailed}
             header={'Detailed Records'}
@@ -38,8 +38,8 @@ const HomePage = () => {
             }
           />
         </div>
-        <div></div>
-        <div>
+        <div className='card-empt-cnt'></div>
+        <div className='card-cnt'>
           <Card
             img={fully}
             header={' Fully Customizable'}
