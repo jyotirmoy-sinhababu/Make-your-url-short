@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@1,200&display=swap');
+
+.card-cnt {
+  padding-left: 20px;
+  width: 250px;
+  height: 200px;
+}
+
+.card-img-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgb(50, 3, 93);
+}
+
+.card-header {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.card-para {
+  font-family: 'Nunito Sans', sans-serif;
+}
