@@ -50,3 +50,9 @@
     padding-top: 0px;
   }
 }
+
+@media screen and (max-width: 440px) {
+  .main-home-card-cnt {
+    padding-left: 45px;
+  }
+}

@@ -18,3 +18,14 @@
   font-family: 'Nunito Sans', sans-serif;
   width: 350px;
 }
+
+@media screen and (max-width: 440px) {
+  .adv-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    margin-left: 45px;
+  }
+}
