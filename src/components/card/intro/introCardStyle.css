@@ -20,3 +20,33 @@
   border-radius: 80px;
   height: 50px;
 }
+
+@media screen and (max-width: 850px) {
+  .introCard-cnt {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-top: 20px;
+  }
+
+  .introCard-img {
+    width: 500px;
+  }
+
+  .introCard-btn-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 45px;
+  }
+
+  .introCard-btn {
+    width: 340px;
+    border: none;
+    background-color: hsl(192, 77%, 46%);
+    border-radius: 80px;
+    height: 50px;
+  }
+}

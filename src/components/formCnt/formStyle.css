@@ -39,10 +39,40 @@
   border-radius: 5px;
   color: aliceblue;
   background-color: hsl(192, 77%, 46%);
+  cursor: pointer;
 }
 
 .form-dis-cnt {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+@media screen and (max-width: 850px) {
+  .sub-frm-cnt {
+    width: 500px;
+    height: 115px;
+  }
+
+  .from {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frm-btn {
+    height: 42px;
+    width: 190px;
+    cursor: pointer;
+  }
+
+  .input-field {
+    width: 350px;
+    height: 47px;
+    padding-left: 25px;
+    padding-right: 12px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+  }
 }

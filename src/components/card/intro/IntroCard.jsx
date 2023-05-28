@@ -13,7 +13,9 @@ const IntroCard = () => {
           Get Started Build your brand’s recognition and get detailed insights
           on how your links are performing.
         </p>
-        <button className='introCard-btn'>Get Started</button>
+        <div className='introCard-btn-cnt'>
+          <button className='introCard-btn'>Get Started</button>
+        </div>
       </div>
       <div className='introCard-img-cnt'>
         <img className='introCard-img' src={workingImg} alt='a man working' />
