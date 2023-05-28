@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bruno+Ace+SC&family=Montserrat+Alternates:wght@200&family=Nunito+Sans:ital,wght@1,200&display=swap');
+
+.footer-cnt {
+  display: flex;
+  padding-top: 25px;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.header {
+  font-family: 'Abril Fatface', cursive;
+  color: aliceblue;
+}
+.header:hover {
+  color: aqua;
+}
+
+.para {
+  font-family: 'Nunito Sans', sans-serif;
+  color: aliceblue;
+}
+
+.para:hover {
+  color: aqua;
+}
+
+.creator {
+  color: orange;
+}
+
+.creator:hover {
+  color: aliceblue;
+}

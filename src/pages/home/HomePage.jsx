@@ -11,6 +11,7 @@ import Card from '../../components/card/cardComp/Card';
 import FormCnt from '../../components/formCnt/FormCnt';
 import AdvanceStatistic from '../../components/card/staticCard/AdvanceStatistic';
 import BoostComp from '../../components/card/boostComp/BoostComp';
+import Footer from '../../components/footer/Footer';
 
 const HomePage = () => {
   return (
@@ -51,6 +52,7 @@ const HomePage = () => {
         </div>
       </div>
       <BoostComp />
+      <Footer />
     </div>
   );
 };
