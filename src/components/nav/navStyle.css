@@ -72,3 +72,7 @@
     font-size: 38px;
   }
 }
+
+.nav-mobile-first {
+  border-bottom: 1px solid black;
+}

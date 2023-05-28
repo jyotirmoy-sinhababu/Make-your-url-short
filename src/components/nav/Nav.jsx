@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './navStyle.css';
 
 const Nav = () => {
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  const navBtn = () => {
+    setIsMobileView(true);
+  };
+
   return (
     <div className='nav-cnt'>
       <div className='nav-first-part'>
@@ -14,8 +20,26 @@ const Nav = () => {
           <button className='nav-btn'>Resources</button>
         </div>
       </div>
+      {isMobileView ? (
+        <div className='nav-mobile-cnt'>
+          <div className='nav-mobile-first'>
+            <button>Features</button>
+            <button>Pricing</button>
+            <button>Resources</button>
+          </div>
+          <div className='nav-mobile-second'>
+            <button>LogIn</button>
+            <button>Sign Up</button>
+          </div>
+        </div>
+      ) : null}
       <div className='nav-mobileView'>
-        <button className='mobile-view-btn'>
+        <button
+          onClick={() => {
+            navBtn();
+          }}
+          className='mobile-view-btn'
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='36'
