@@ -1,0 +1,25 @@
+.boost-cnt {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  height: 240px;
+  background-image: url(../../../assests/img/bg-boost-desktop.svg);
+  background-color: rgb(61, 5, 114);
+}
+
+.boost-header {
+  color: aliceblue;
+}
+
+.boost-btn {
+  width: 140px;
+  border: none;
+  background-color: hsl(192, 77%, 46%);
+  border-radius: 80px;
+  height: 50px;
+  cursor: pointer;
+}

@@ -10,6 +10,7 @@ import IntroCard from '../../components/card/intro/IntroCard';
 import Card from '../../components/card/cardComp/Card';
 import FormCnt from '../../components/formCnt/FormCnt';
 import AdvanceStatistic from '../../components/card/staticCard/AdvanceStatistic';
+import BoostComp from '../../components/card/boostComp/BoostComp';
 
 const HomePage = () => {
   return (
@@ -19,7 +20,7 @@ const HomePage = () => {
       <FormCnt />
       <AdvanceStatistic />
       <div className='main-home-card-cnt'>
-        <div className='small-card-cnt'>
+        <div className='smallOne-card-cnt'>
           <Card
             img={brand}
             header={'Brand Recognition'}
@@ -29,7 +30,7 @@ const HomePage = () => {
           />
         </div>
         <div className='card-empt-cnt'></div>
-        <div className='small-card-cnt'>
+        <div className='smallTwo-card-cnt'>
           <Card
             img={detailed}
             header={'Detailed Records'}
@@ -39,7 +40,7 @@ const HomePage = () => {
           />
         </div>
         <div className='card-empt-cnt'></div>
-        <div className='small-card-cnt'>
+        <div className='smallThree-card-cnt'>
           <Card
             img={fully}
             header={' Fully Customizable'}
@@ -49,6 +50,7 @@ const HomePage = () => {
           />
         </div>
       </div>
+      <BoostComp />
     </div>
   );
 };
