@@ -19,7 +19,7 @@ const HomePage = () => {
       <FormCnt />
       <AdvanceStatistic />
       <div className='main-home-card-cnt'>
-        <div className='card-cnt'>
+        <div className='small-card-cnt'>
           <Card
             img={brand}
             header={'Brand Recognition'}
@@ -29,7 +29,7 @@ const HomePage = () => {
           />
         </div>
         <div className='card-empt-cnt'></div>
-        <div className='card-cnt'>
+        <div className='small-card-cnt'>
           <Card
             img={detailed}
             header={'Detailed Records'}
@@ -39,7 +39,7 @@ const HomePage = () => {
           />
         </div>
         <div className='card-empt-cnt'></div>
-        <div className='card-cnt'>
+        <div className='small-card-cnt'>
           <Card
             img={fully}
             header={' Fully Customizable'}
