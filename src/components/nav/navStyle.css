@@ -39,3 +39,36 @@
   background-color: hsl(192, 77%, 46%);
   border-radius: 80px;
 }
+
+.nav-mobileView {
+  display: none;
+}
+
+@media screen and (max-width: 440px) {
+  .nav-first-btn-cnt,
+  .nav-auth-cnt {
+    display: none;
+  }
+
+  .nav-mobileView {
+    display: flex;
+  }
+
+  .mobile-view-btn {
+    border: none;
+    background-color: white;
+  }
+
+  .nav-cnt {
+    display: flex;
+    align-items: center;
+    gap: 260px;
+    padding-top: 20px;
+    padding-left: 35px;
+    margin-left: 30px;
+  }
+
+  .nav-heading {
+    font-size: 38px;
+  }
+}

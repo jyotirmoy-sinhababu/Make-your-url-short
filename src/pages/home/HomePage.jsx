@@ -15,7 +15,7 @@ import Footer from '../../components/footer/Footer';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='home-main-cnt'>
       <Nav />
       <IntroCard />
       <FormCnt />
