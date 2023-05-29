@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+Live Site URL: [Add live site URL here](https://sprightly-capybara-9a747b.netlify.app)
 
 ### Built with
 
@@ -32,7 +32,7 @@ Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 const handleSubmit = () => {
 if (inputData.length) {
 axios
-.get(`https://api.shrtco.de/v2/shorten?url=${inputData}`)
+.get(`api url`)
 .then((res) => {
 const newData = { ...res.data.result, id: idGenerator() };
 setApiData([...apiData, newData]);
