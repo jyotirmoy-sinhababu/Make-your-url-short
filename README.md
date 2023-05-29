@@ -26,3 +26,18 @@ Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 - CSS custom properties
 - [React](https://reactjs.org/) - JS library
+
+### What I learned
+
+const handleSubmit = () => {
+if (inputData.length) {
+axios
+.get(`https://api.shrtco.de/v2/shorten?url=${inputData}`)
+.then((res) => {
+const newData = { ...res.data.result, id: idGenerator() };
+setApiData([...apiData, newData]);
+});
+} else setErr('This field is required');
+};
+
+i built this function according to need of this project.
