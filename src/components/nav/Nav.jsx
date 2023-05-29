@@ -23,13 +23,13 @@ const Nav = () => {
       {isMobileView ? (
         <div className='nav-mobile-cnt'>
           <div className='nav-mobile-first'>
-            <button>Features</button>
-            <button>Pricing</button>
-            <button>Resources</button>
+            <button className='nav-mobile-btn'>Features</button>
+            <button className='nav-mobile-btn'>Pricing</button>
+            <button className='nav-mobile-btn'>Resources</button>
           </div>
           <div className='nav-mobile-second'>
-            <button>LogIn</button>
-            <button>Sign Up</button>
+            <button className='nav-mobile-btn'>LogIn</button>
+            <button className='nav-mobile-btn'>Sign Up</button>
           </div>
         </div>
       ) : null}
