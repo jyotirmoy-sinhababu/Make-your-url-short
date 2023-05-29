@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 import './formStyle.css';
@@ -8,6 +8,7 @@ import DisplayLinks from '../displayLink/DisplayLinks';
 const FormCnt = () => {
   const [inputData, setInputData] = useState('');
   const [apiData, setApiData] = useState([]);
+  const [err, setErr] = useState('');
 
   const handleChange = (e) => {
     setInputData(e.target.value);
@@ -21,12 +22,11 @@ const FormCnt = () => {
           const newData = { ...res.data.result, id: idGenerator() };
           setApiData([...apiData, newData]);
         });
-    }
+    } else setErr('This field is required');
   };
   const idGenerator = () => {
     return Math.floor(Math.random() * 100000);
   };
-
   return (
     <div className='frm-cnt'>
       {' '}
@@ -46,12 +46,14 @@ const FormCnt = () => {
             }}
             type='url'
             placeholder='Shorten a link here...'
+            required
           />
           <button className='frm-btn' type='submit'>
             Shorten it!
           </button>
         </form>
       </div>
+      <div>{!err ? <p>{err}</p> : null}</div>
       <div className='form-dis-cnt'>
         {apiData.length
           ? apiData.map((item) => {
