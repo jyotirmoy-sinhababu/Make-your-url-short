@@ -27,7 +27,6 @@ const FormCnt = () => {
     return Math.floor(Math.random() * 100000);
   };
 
-  console.log(apiData);
   return (
     <div className='frm-cnt'>
       {' '}

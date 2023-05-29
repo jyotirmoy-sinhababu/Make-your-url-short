@@ -6,7 +6,12 @@ const Nav = () => {
   const [isMobileView, setIsMobileView] = useState(false);
 
   const navBtn = () => {
-    setIsMobileView(true);
+    if (!isMobileView) {
+      setIsMobileView(true);
+    }
+    if (isMobileView) {
+      setIsMobileView(false);
+    }
   };
 
   return (
@@ -45,7 +50,7 @@ const Nav = () => {
             width='36'
             height='36'
             fill='currentColor'
-            class='bi bi-three-dots-vertical'
+            className='bi bi-three-dots-vertical'
             viewBox='0 0 16 16'
           >
             <path d='M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z' />
